@@ -1,7 +1,7 @@
 import csv, requests, re
 from bs4 import BeautifulSoup
 
-url = 'https://hao8i.github.io/'
+url = 'https://hao8i.github.io/dh123/'
 html = requests.get(url).text
 soup = BeautifulSoup(html, 'html.parser')
 articles = []
