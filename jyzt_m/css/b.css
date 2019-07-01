@@ -2146,7 +2146,7 @@ body {
 }
 
 .user_webs {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 35px
 }
@@ -2435,8 +2435,7 @@ body {
 }
 
 .myweb_title,
-.myweb_category_add,
-.myweb_title_overflow {
+.myweb_category_add{
     font-size: 16px;
     font-weight: bold;
     position: absolute;
@@ -2449,6 +2448,15 @@ body {
 }
 
 .myweb_title_overflow {
+    font-size: 16px;
+    font-weight: bold;
+    
+    top: 13px;
+    display: block;
+    width: 100px;
+    padding-top: 8px;
+    cursor: default;
+    color: #ff0000
     overflow: hidden;
     white-space: nowrap
 }
