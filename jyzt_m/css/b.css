@@ -2453,7 +2453,7 @@ body {
     
     top: 13px;
     display: block;
-    width: 100px;
+    width: 100%;
     padding-top: 8px;
     cursor: default;
     color: #ff0000
@@ -2577,8 +2577,8 @@ body {
 }
 
 .myweb_content {
-    width: 530px;
-    margin-left: 100px
+    width: 95%;
+    margin-left: 10px
 }
 
 .myweb_content_safe {
