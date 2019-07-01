@@ -2569,7 +2569,7 @@ body {
 }
 
 .myweb_content {
-    width: 60%;
+    width: 530px;
     margin-left: 100px
 }
 
@@ -2596,7 +2596,7 @@ body {
 
 .myweb_site_align {
     display: inline-block;
-    width: 30%;
+    width: 138px;
     height: 34px;
     cursor: pointer;
     vertical-align: top
