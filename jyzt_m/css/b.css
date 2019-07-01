@@ -2437,7 +2437,7 @@ body {
 .myweb_title,
 .myweb_category_add,
 .myweb_title_overflow {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     position: absolute;
     top: 13px;
@@ -2445,7 +2445,7 @@ body {
     width: 100px;
     padding-top: 8px;
     cursor: default;
-    color: #696969
+    color: #ff0000
 }
 
 .myweb_title_overflow {
