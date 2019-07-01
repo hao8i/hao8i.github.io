@@ -1,3 +1,4 @@
+/* html通用标签样式*/
 html,
 body,
 p,
@@ -56,13 +57,14 @@ body {
     height: 100%
 }
 
-
+/* .user_webs  是教育专题内容块的样式*/
 .user_webs {
     width: 100%;
     margin: 0 auto;
     padding-top: 35px
 }
 
+/* .myweb 是小学教育初级 小学教育中级等栏目块的样式*/
 .myweb {
     position: relative;
     padding: 13px 10px 13px 10px;
@@ -73,6 +75,7 @@ body {
     border-bottom: 1px dashed silver
 }
 
+/* .myweb_title_overflow 是小学教育初级 小学教育中级等栏目标题的样式*/
 .myweb_title_overflow {
     font-size: 16px;
     font-weight: bold;
@@ -87,6 +90,7 @@ body {
     white-space: nowrap
 }
 
+/* .myweb_site_name_align 是小学教育初级栏目中一年级重要文章块样式*/
 .myweb_site_align {
     display: inline-block;
     width: 138px;
@@ -123,6 +127,7 @@ body {
     color: #777
 }
 
+/* .myweb_site_name_align 是小学教育初级栏目中一年级重要文章链接名称的样式*/
 .myweb_site_name_align {
     font-size: 14px;
     line-height: 34px;
@@ -165,6 +170,7 @@ body {
     color: #f15b27
 }
 
+/* .myweb_site_name_part_new 是新加文章new 字母的样式*/
 .myweb_site_name_part_new {
     font-family: arial;
     position: absolute;
