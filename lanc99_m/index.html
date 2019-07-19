@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> C#开发</title>
+
+    <link rel="stylesheet" href="./css/b2.css">
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        table,
+        p {
+            margin-left: 25px;
+        }
+
+        td {
+            padding-bottom: 15px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            padding-right: 15px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .section {
+            border: none;
+            padding: 20px 40px;
+        }
+
+        .section>* {
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f5f7f9;">
+    <div class="user_webs">
+        <div id="user_fav_area">
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="c#基础">c#基础</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/chen8238065/article/details/47018271" target="_blank"
+                            class="myweb_site_name_align" title="五星 C#集合类型总结和性能分析 - chen8238065的专栏 - CSDN博客"
+                            style="font-weight: bold;">C#集合类型总结和性能分析</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="c#中级">c#中级</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=wenku.baidu.com"></b><a
+                            href="https://wenku.baidu.com/view/41fc1fed5ef7ba0d4a733b74.html" target="_blank"
+                            class="myweb_site_name_align" title="c#高级编程知识点总结&nbsp;- 百度文库"
+                            style="font-weight: bold;">c#高级编程知识点总结</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="C#书籍">C#书籍</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/qq_36439293/article/details/82182660" target="_blank"
+                            class="myweb_site_name_align" title="【转】推荐10本C#编程的最佳书籍 - 静谧的小码农的博客 - CSDN博客"
+                            style="font-weight: bold;">10本C#编程的最佳书籍</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="">读书笔记</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/davidsheh/p/5236686.html" target="_blank"
+                            class="myweb_site_name_align" title="《C#高级编程》读书笔记 - Sheh伟伟 - 博客"
+                            style="font-weight: bold;">C#高级编程读书笔记</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/davidsheh/p/5215154.html" target="_blank"
+                            class="myweb_site_name_align" title="《代码整洁之道》读书笔记 - Sheh伟伟 - 博客园"
+                            style="font-weight: bold;">代码整洁之道</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/davidsheh/p/5239745.html" target="_blank"
+                            class="myweb_site_name_align" title="《重构：改善代码的既有设计》读书笔记 - Sheh伟伟 - 博客园"
+                            style="font-weight: bold;">重构：改善代码的既有设计</a></div>
+                </div><span title="c#读书笔记" class="myweb_title_remark_single">c#读书笔记</span>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="">编码规范</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=wenku.baidu.com"></b><a
+                            href="https://wenku.baidu.com/view/558bba62d0d233d4b04e690c.html" target="_blank"
+                            class="myweb_site_name_align" title="c#编码规范&nbsp;- 百度文库"
+                            style="font-weight: bold;">c#编码规范</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=wenku.baidu.com"></b><a
+                            href="https://wenku.baidu.com/view/97136d253d1ec5da50e2524de518964bcf84d2dd.html?rec_flag=default&amp;sxts=1560606801724"
+                            target="_blank" class="myweb_site_name_align" title="编码规范-C#&nbsp;- 百度文库"
+                            style="font-weight: bold;">编码规范-C#</a></div>
+                </div><span title="C#编码规范" class="myweb_title_remark_single">C#编码规范</span>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="">开源项目</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/binnygoal/article/details/79557746" target="_blank"
+                            class="myweb_site_name_align" title="非常完善的Log4net详细说明 - 芒果儿 - CSDN博客"
+                            style="font-weight: bold;">Log4net详细说明</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/orichisonic/article/details/72485434" target="_blank"
+                            class="myweb_site_name_align" title="log4net面面观之工作原理 - orichisonic的专栏 - CSDN博客"
+                            style="font-weight: bold;">log4net面面观之工作原理</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/dhx20022889/article/details/3446633" target="_blank"
+                            class="myweb_site_name_align" title="Log4net源码分析（二） - 专注成就非凡 - CSDN博客"
+                            style="font-weight: bold;">Log4net源码分析（二）</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/Liyuting/p/8417757.html" target="_blank"
+                            class="myweb_site_name_align" title="C# 使用/配置Log4Net - 哈哈哈嗝 - 博客园"
+                            style="font-weight: bold;">C# 使用/配置Log4Net</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/weixiaowei/p/8253228.html" target="_blank"
+                            class="myweb_site_name_align" title="C# log4net 的配置 - ？？？笨小孩 - 博客园"
+                            style="font-weight: bold;">C# log4net 的配置 - ？？？笨小孩 - 博客园</a></div>
+                </div><span title="C#开源项目" class="myweb_title_remark_single">C#开源项目</span>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="">测试工具</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/onlytiancai/archive/2005/07/25/199552.html" target="_blank"
+                            class="myweb_site_name_align" title="初次使用Nunit进行单元测试 - 蛙蛙王子 - 博客园"
+                            style="font-weight: bold;">Nunit进行单元测试</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/confach/archive/2005/06/20/177817.aspx" target="_blank"
+                            class="myweb_site_name_align" title="NUnit详细使用方法 - 张太国 - 博客园"
+                            style="font-weight: bold;">NUnit详细使用方法</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/ikbk/p/10024766.html" target="_blank"
+                            class="myweb_site_name_align" title="Nunit单元测试入门学习随笔（一） - ikbk - 博客园"
+                            style="font-weight: bold;">Nunit单元测试入门</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/Gehang/article/details/58722" target="_blank"
+                            class="myweb_site_name_align" title="在.NET环境中使用单元测试工具NUnit - 葛杭的.NET网志 - CSDN博客"
+                            style="font-weight: bold;">单元测试工具NUnit</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/snowshinoy/article/details/6967054" target="_blank"
+                            class="myweb_site_name_align"
+                            title="【Nunit入门系列讲座 3】NUnit断言- 如何使用断言 - IQuickTest领先技术专栏 - CSDN博客"
+                            style="font-weight: bold;">Nunit入门系列讲座 3</a></div>
+                </div><span title="C#测试工具" class="myweb_title_remark_single">C#测试工具</span>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="UML工具">UML工具</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/haohaojian/article/details/49758971" target="_blank"
+                            class="myweb_site_name_align" title="uml工具大全 - haohaojian的专栏 - CSDN博客"
+                            style="font-weight: bold;">uml工具大全</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.ouyaoxiazai.com"></b><a
+                            href="http://www.ouyaoxiazai.com/soft/txtx/106/46034.html" target="_blank"
+                            class="myweb_site_name_align" title="Visustin破解版(附Visustin教程)|Visustin 流程图制作软件 v7.1 - 偶要下载站"
+                            style="font-weight: bold;">Visustin破解版</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.ddooo.com"></b><a
+                            href="http://www.ddooo.com/softdown/135731.htm" target="_blank"
+                            class="myweb_site_name_align" title="visustin绿色破解版|visustin(流程图制作软件) v7.10绿色版 下载 - 多多软件站"
+                            style="font-weight: bold;">visustin绿色破解版</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.opdown.com"></b><a
+                            href="http://www.opdown.com/soft/49516.html" target="_blank" class="myweb_site_name_align"
+                            title="UModel 2016中文版|Altova UModel 2016下载 官方免费版 32位/64 - 欧普软件下载"
+                            style="font-weight: bold;">UModel 2016中文版</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.lenosoft.net"></b><a
+                            href="http://www.lenosoft.net/down/9943.htm" target="_blank" class="myweb_site_name_align"
+                            title="Altova UModel（软件建模和SQL数据库设计软件）2016企业版中文注册破解版下载-里诺下载中心"
+                            style="font-weight: bold;">Altova UModel</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=holdbelief.iteye.com"></b><a
+                            href="https://holdbelief.iteye.com/blog/1096289" target="_blank"
+                            class="myweb_site_name_align" title="Altova UModel 2011r2 + SN - 信仰的力量 - ITeye博客"
+                            style="font-weight: bold;">Altova UModel 2011r2 + SN</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.iteye.com"></b><a
+                            href="https://www.iteye.com/" target="_blank" class="myweb_site_name_align"
+                            title="ITeye Java编程 Spring框架 Ajax技术 agile敏捷软件开发 ruby on rails实践 - ITeye软件开发交流社区"
+                            style="font-weight: bold;">ITeye</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="反编译">反编译</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/jiankunking/article/details/17992229" target="_blank"
+                            class="myweb_site_name_align" title="Reflector 已经out了，试试ILSpy - 衣舞晨风 - CSDN博客"
+                            style="font-weight: bold;">ILSpy</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/qq_34533514/article/details/54696065" target="_blank"
+                            class="myweb_site_name_align" title="反编译软件ILSpy的使用教程 - TONY的博客 - CSDN博客"
+                            style="font-weight: bold;">ILSpy的使用教程</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/gx_489587482/article/details/52529979" target="_blank"
+                            class="myweb_site_name_align"
+                            title="使用ILSpy软件反编译.Net应用程序的方法及注意事项 - gx_489587482的博客 - CSDN博客"
+                            style="font-weight: bold;">使用ILSpy软件反编译</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=jingyan.baidu.com"></b><a
+                            href="https://jingyan.baidu.com/article/afd8f4de55e99c34e286e995.html" target="_blank"
+                            class="myweb_site_name_align" title="如何让C#编译不安全代码（含unsafe的代码）-百度经验"
+                            style="font-weight: bold;">如何让C#编译不安全代码</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/goldenbridge/p/7812081.html" target="_blank"
+                            class="myweb_site_name_align" title="C#使用Oracle.ManagedDataAccess.dll - 上青天揽月 - 博客园"
+                            style="font-weight: bold;">C#使用Oracle.ManagedDataAccess.dll</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/boonya/article/details/79930128" target="_blank"
+                            class="myweb_site_name_align" title="重拾C#日常积累：Fixed初始化固定大小的指针 - 纸上得来终觉浅，绝知此事要躬行 - CSDN博客"
+                            style="font-weight: bold;">Fixed初始化固定大小的指针</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="">Visual Studio</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/magerate/archive/2009/03/27/1423092.html" target="_blank"
+                            class="myweb_site_name_align" title="设置c#项目obj路径的方法 - magerate - 博客园"
+                            style="font-weight: bold;">设置c#项目obj路径的方法</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=jingyan.baidu.com"></b><a
+                            href="https://jingyan.baidu.com/article/3c343ff7e86f850d36796378.html" target="_blank"
+                            class="myweb_site_name_align" title="vs2010怎么把已存在的项目添加到当前解决方案-百度经验"
+                            style="font-weight: bold;">vs2010怎么把已存在的项目添加到当前解决方案</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/WPwalter/article/details/80371271" target="_blank"
+                            class="myweb_site_name_align" title="理解 C# 项目 csproj 文件格式的本质和编译流程 - walterlv的专栏 - CSDN博客"
+                            style="font-weight: bold;">理解 C# 项目 csproj 文件格式的本质和编译流程</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/playermaker57/article/details/80190580" target="_blank"
+                            class="myweb_site_name_align" title="细说VS MSBuild 和 Framework 的区别 - 不忘初心 - CSDN博客"
+                            style="font-weight: bold;">细说VS MSBuild 和 Framework 的区别</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/u012138032/article/details/76589045" target="_blank"
+                            class="myweb_site_name_align" title="Visual Studio中，MSBUild版本问题 - u012138032的博客 - CSDN博客"
+                            style="font-weight: bold;">MSBUild版本问题</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/yeminlin/article/details/52763692" target="_blank"
+                            class="myweb_site_name_align" title="Visual Studio版本汇总比较 - 口十木木技术博客 - CSDN博客"
+                            style="font-weight: bold;">Visual Studio版本汇总比较</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/zgrjkflmkyc/article/details/79010301" target="_blank"
+                            class="myweb_site_name_align" title="Visual Studio各个版本对应关系 - zgrjkflmkyc的专栏 - CSDN博客"
+                            style="font-weight: bold;">Visual Studio各个版本对应关系</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/xiejiashu/article/details/52397641" target="_blank"
+                            class="myweb_site_name_align"
+                            title="Visual Studio解决方案vs2005/vs2008/vs2010/vs2012/vs2013/vs2015版本互相转换工具 - Babosa的专栏 - CSDN博客"
+                            style="font-weight: bold;">Visual Studio解决方案版本互相转换工具</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/bcbobo21cn/article/details/51803693" target="_blank"
+                            class="myweb_site_name_align" title="MSBuild学习总结 - bcbobo21cn的专栏 - CSDN博客"
+                            style="font-weight: bold;">MSBuild学习总结</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/l_nh/archive/2012/09/01/2666104.html" target="_blank"
+                            class="myweb_site_name_align" title="五星 MSBuild入门（续） - blackheart - 博客园"
+                            style="font-weight: bold;">MSBuild入门（续）</a></div>
+                </div><span title="Visual Studio2010以上IDE使用技巧" class="myweb_title_remark_double">Visual
+                    Studio2010以上IDE使用技巧</span>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="C#_GDAL">C#_GDAL</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/mengdong_zy/article/details/18840565" target="_blank"
+                            class="myweb_site_name_align" title="基于GDAL的遥感影像显示（C#版） - zy332719794的专栏 - CSDN博客"
+                            style="font-weight: bold;">基于GDAL的遥感影像显示（C#版）</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/mygisforum/article/details/22478491" target="_blank"
+                            class="myweb_site_name_align" title="GDAL C# 开发环境配置" style="font-weight: bold;">GDAL C#
+                            开发环境配置 - GIS 随笔 - CSDN博客</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.xuebuyuan.com"></b><a
+                            href="https://www.xuebuyuan.com/3221812.html" target="_blank" class="myweb_site_name_align"
+                            title="GDAL 综合整理 | 学步园" style="font-weight: bold;">GDAL 综合整理 | 学步园</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/liminlu0314/article/details/6933772" target="_blank"
+                            class="myweb_site_name_align" title="GDAL源码剖析（一） - GDAL专栏 - CSDN博客"
+                            style="font-weight: bold;">GDAL源码剖析一</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="C#特殊语法">C#特殊语法</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/boonya/article/details/79930128" target="_blank"
+                            class="myweb_site_name_align" title="重拾C#日常积累：Fixed初始化固定大小的指针 - 纸上得来终觉浅，绝知此事要躬行 - CSDN博客"
+                            style="font-weight: bold;">Fixed初始化固定大小的指针</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

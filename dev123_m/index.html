@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> GIT版本管理</title>
+
+    <link rel="stylesheet" href="./css/b2.css">
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        table,
+        p {
+            margin-left: 25px;
+        }
+
+        td {
+            padding-bottom: 15px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            padding-right: 15px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .section {
+            border: none;
+            padding: 20px 40px;
+        }
+
+        .section>* {
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f5f7f9;">
+    <div class="user_webs">
+        <div id="user_fav_area">
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="git基础">git基础</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=segmentfault.com"></b><a
+                            href="https://segmentfault.com/a/1190000009262266" target="_blank"
+                            class="myweb_site_name_align" title="如何在git上搭建个人静态网页（简单易懂，包学习会） - 前端技术交流 -"
+                            style="font-weight: bold;">如何在git上搭建个人静态网页</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.runoob.com"></b><a
+                            href="https://www.runoob.com/git/git-tutorial.html" target="_blank"
+                            class="myweb_site_name_align" title="Git 教程 | 菜鸟教程" style="font-weight: bold;">Git 教程</a>
+                    </div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.liaoxuefeng.com"></b><a
+                            href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank"
+                            class="myweb_site_name_align" title="Git教程 - 廖雪峰的官方网站" style="font-weight: bold;">Git教程</a>
+                    </div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.bootcss.com"></b><a
+                            href="https://www.bootcss.com/p/git-guide/" target="_blank" class="myweb_site_name_align"
+                            title="git 使用简易指南" style="font-weight: bold;">git 使用简易指南</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="git中级">git中级</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=segmentfault.com"></b><a
+                            href="https://segmentfault.com/a/1190000009262266" target="_blank"
+                            class="myweb_site_name_align" title="如何在git上搭建个人静态网页（简单易懂，包学习会） - 前端技术交流 -"
+                            style="font-weight: bold;">如何在git上搭建个人静态网页</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=www.cnblogs.com"></b><a
+                            href="https://www.cnblogs.com/sunny18/p/8831939.html" target="_blank"
+                            class="myweb_site_name_align" title="git之一： 在windows下安装git和使用总结 - sunny18 - 博客园"
+                            style="font-weight: bold;">在windows下安装git和使用总结</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="git高级">git高级</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=segmentfault.com"></b><a
+                            href="https://segmentfault.com/a/1190000009262266" target="_blank"
+                            class="myweb_site_name_align" title="如何在git上搭建个人静态网页（简单易懂，包学习会） - 前端技术交流 -"
+                            style="font-weight: bold;">如何在git上搭建个人静态网页</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=blog.csdn.net"></b><a
+                            href="https://blog.csdn.net/qq_36150631/article/details/81038485" target="_blank"
+                            class="myweb_site_name_align" title="Git使用教程,最详细，最傻瓜，最浅显，真正手把手教 - qq_36150631的博客 - CSDN博客"
+                            style="font-weight: bold;">Git使用教程</a></div>
+                </div>
+            </div>
+            <div class="myweb"> <a class="myweb_title_overflow" style="" title="git软件">git软件</a>
+                <div class="myweb_content">
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=pc.qq.com"></b><a
+                            href="https://pc.qq.com/detail/13/detail_22693.html" target="_blank"
+                            class="myweb_site_name_align" title="【Git下载】2019年最新官方正式版Git免费下载 - 腾讯软件中心官网"
+                            style="font-weight: bold;">Git免费下载</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=quqi.gblhgk.com"></b><a
+                            href="https://quqi.gblhgk.com/s/751398/7ACqO39PReIGO5rT" target="_blank"
+                            class="myweb_site_name_align" title="HTML编辑软件64位版"
+                            style="font-weight: bold;">HTML编辑软件64位版</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=quqi.gblhgk.com"></b><a
+                            href="https://quqi.gblhgk.com/s/751398/jVNNEY4p2eNbbFHE" target="_blank"
+                            class="myweb_site_name_align" title="HTML编辑软件32位版"
+                            style="font-weight: bold;">HTML编辑软件32位版</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=pc.qq.com"></b><a
+                            href="https://pc.qq.com/detail/16/detail_22856.html" target="_blank"
+                            class="myweb_site_name_align"
+                            title="【Visual Studio Code下载】2019年最新官方正式版Visual Studio Code免费下载 - 腾讯软件中心官网"
+                            style="font-weight: bold;">Visual Studio Code免费下载</a></div>
+                    <div class="myweb_site_align" style=""> <b class="myweb_site_img_area"
+                            style="visibility: hidden;"><img class="myweb_site_img_content" style=""
+                                src="http://www.google.cn/s2/favicons?domain=jingyan.baidu.com"></b><a
+                            href="https://jingyan.baidu.com/article/7e44095377c9d12fc1e2ef5b.html" target="_blank"
+                            class="myweb_site_name_align" title="将VSCode设置成中文语言环境-百度经验"
+                            style="font-weight: bold;">VSCode设置成中文语言环境</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
